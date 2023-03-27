@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./lib/style.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="./lib/logo.58169365.png" alt="">
+            <h1>Kafene</h1>
+            <a href="./order.html">Orders</a>
+            <a href="./products.html">Products</a>
+            <a class="active" href="./users.html">Users</a>
+        </div>
+        <div class="left">
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+
+    <div id="loading">
+        <center><img style="height: 400px; margin: 50px;" src="./lib/loading.gif" alt="Loading..."></center>
+    </div>
+    <div class="users" id="users">
+        <h1>Users</h1>
+        <input id="search" type="search" placeholder="Search by Name">
+        <button id="Reset">Reset</button>
+        <div class="user-cards" id="user-cards">
+            <!-- <div class="user-card">
+                <div class="user-img">
+                    <img src="./lib/logo.58169365.png" alt="">
+                </div>
+                <div class="user-info">
+                    <p><span class="info-head">Id: &nbsp;</span>1</p>
+                    <p><span class="info-head">Full Name: &nbsp;</span>Clementius McGillreich</p>
+                    <p><span class="info-head">DoB: &nbsp;</span>20 Feb, 1997</p>
+                    <p><span class="info-head">Gender: &nbsp;</span>Male</p>
+                    <p><span class="info-head">Current Location: &nbsp;</span>Bayambang, Philippines</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    </section>
+    <script src="./lib/users.js"></script>
+</body>
+</html>

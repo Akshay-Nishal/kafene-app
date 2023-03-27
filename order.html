@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./lib/style.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="./lib/logo.58169365.png" alt="">
+            <h1>Kafene</h1>
+            <a class="active" href="./order.html">Orders</a>
+            <a href="./products.html">Products</a>
+            <a href="./users.html">Users</a>
+        </div>
+        <div class="left">
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+
+    <div id="loading">
+        <center><img style="height: 400px; margin: 50px;" src="./lib/loading.gif" alt="Loading..."></center>
+    </div>
+    <section class="order" id="order">
+        <h1>Orders</h1>
+        <div class="orders">
+            <div class="left">
+                <h3>Filters</h3>
+                <div class="box">
+                    <input type="checkbox" value="New" class="checkbox" id="New" checked>
+                    <label for="New">New</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" value="Packed" class="checkbox" id="Packed" checked>
+                    <label for="Packed">Packed</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" value="InTransit" class="checkbox" id="InTransit" checked>
+                    <label for="InTransit">In Transit</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" value="Delivered" class="checkbox" id="Delivered" checked>
+                    <label for="Delivered">Delivered</label>
+                </div>
+            </div>
+
+            <div class="order-cards" id="order-cards">
+                <!-- <div id="card">
+                    <div><p><span>ID:&nbsp;</span> 714-69-5617</p></div>
+                    <div><p><span>Customer:&nbsp;</span> Sally Whebell</p></div>
+                    <div><p><span>Date:&nbsp;</span> 07 Aug, 2020 2:29 AM</p></div>
+                    <div><p><span>Amount:&nbsp;</span> $634.2</p></div>
+                    <div><p><span>Status:&nbsp;</span>   Delivered</p></div>
+                </div> -->
+
+            </div>
+
+
+             <!-- <div class="order-table">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                    <tbody id="tbody">
+                        <tr style="display: none;">
+                            <th class="light">714-69-5617</th>
+                            <th >Sally Whebell</th>
+                            <th >07 Aug, 2020 <br><span class="light">2:29 AM</span> </th>
+                            <th class="light">$634.2</th>
+                            <th >Delivered</th>
+                        </tr> 
+
+                    </tbody>
+                </table> 
+
+            </div> -->
+        </div>
+    </section>
+    <script src="./lib/order.js"></script>
+</body>
+</html>

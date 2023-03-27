@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./lib/products.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="./lib/logo.58169365.png" alt="">
+            <h1>Kafene</h1>
+            <a href="./order.html">Orders</a>
+            <a class="active" href="./products.html">Products</a>
+            <a href="./users.html">Users</a>
+        </div>
+        <div class="left">
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+
+    <div id="loading">
+        <center><img style="height: 400px; margin: 50px;" src="./lib/loading.gif" alt="Loading..."></center>
+    </div>
+    <section class="product" id="product">
+        <h1>Products</h1>
+        <div class="products">
+            <div class="left">
+                <h3>Filters</h3>
+                <div class="box">
+                    <input type="checkbox" value="Expired" class="checkbox" id="Expired" checked>
+                    <label for="Expired">Expired</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" value="Low" class="checkbox" id="Low" checked>
+                    <label for="Low">Low Stock</label>
+                </div>
+            </div>
+
+            <div class="product-cards" id="product-cards">
+                <!-- <div id="card">
+                    <div><p><span>ID:&nbsp;</span> 56104-020</p></div>
+                    <div><p><span>Product Name:&nbsp;</span> Miconazole Nitrate</p></div>
+                    <div><p><span>Product Brand:&nbsp;</span> Premier Brands of America Inc.</p></div>
+                    <div><p><span>Expiry Date:&nbsp;</span> 14 Aug, 2012</p></div>
+                    <div><p><span>Unit Price:&nbsp;</span>   $993.01</p></div>
+                    <div><p><span>Stock:&nbsp;</span>   725</p></div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+    <script src="./lib/products.js"></script>
+</body>
+</html>

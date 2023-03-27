@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+</head>
+<body>
+    <h1>Loading...</h1>
+    
+    <script>
+        if(localStorage.getItem('login')){
+            console.log("Item Present")
+        }
+        else{
+            localStorage.setItem('login','false')
+            console.log("login created");
+        }
+
+        if(localStorage.getItem('login')=='true'){
+            window.location.assign("order.html")
+        }
+        else{
+            window.location.assign("login.html")
+        }
+    </script>
+</body>
+</html>
